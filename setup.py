@@ -78,6 +78,8 @@ for service_name in [
 extras_per_service.update(
     {
         "apigateway": [_dep_python_jose, _dep_python_jose_ecdsa_pin],
+        "awslambda": [],
+        "batch": [],
         "cloudformation": [_dep_PyYAML, _dep_cfn_lint],
         "cognitoidp": [_dep_python_jose, _dep_python_jose_ecdsa_pin],
         "ec2": [_dep_sshpubkeys],
