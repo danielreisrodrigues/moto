@@ -1,2 +1,3 @@
 #  Please add requirements to setup.py
+git+https://github.com/danielreisrodrigues/docker-py.git@master
 -e .[all]
