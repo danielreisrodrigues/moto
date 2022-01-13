@@ -777,12 +777,15 @@ class SQSBackend(BaseBackend):
             )
 
         if group_id is None:
+            print("-----1")
             # MessageGroupId is a mandatory parameter for all
             # messages in a fifo queue
             if queue.fifo_queue:
                 raise MissingParameter("MessageGroupId")
         else:
+            print("-----2")
             if not queue.fifo_queue:
+                print("-----3")
                 msg = (
                     "Value {} for parameter MessageGroupId is invalid. "
                     "Reason: The request include parameter that is not valid for this queue type."
